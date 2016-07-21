@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mario Quiz!</title>
+	<meta name="description" content="A quiz about Nintendo's Mario series of video games.">
+	<meta name="author" content="Row and Adam"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link href="https://necolas.github.io/normalize.css/4.1.1/normalize.css" rel="stylesheet" type="text/css">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+	<div class="binding-box">
+		<div class="pages" id="start-page">
+		<img src="images/mushroom.png">
+			<h2>Mario Quiz</h2>
+			<p>How much do you know about Nintendo's mustachioed hero? Let's find out!</p>
+			<input class="button" type="submit" id="next-question" value="START" />
+		</div>
+
+		<div class="pages" id="result-page">
+			<h2>You got it!</h2>
+			<span>The correct answer is <span id="correct-answer">lalala</span></span>
+			<p id="trivia-text">Trivia goes here</p>
+			<input class="button" type="submit" id="next-question" value="Next question" />
+		</div>
+
+		<div class="pages" id="question-page">
+			<img id="mushroom" src="images/mushroom.png" /><h2>What objects does Mario have to collect in Super Mario 64 to advance the game?</h2>
+
+			<ul>
+			<li><input class="button" type="submit" id="0" value="Donkey Donkey Kong" /></li>
+			<li><input class="button" type="submit" id="1" value="Donkey Kong" /></li>
+			<li><input class="button" type="submit" id="2" value="Donkey DonkeyDonkey Kong" /></li>
+			<li><input class="button" type="submit" id="3" value="Kong" /></li>
+			</ul>
+		</div>
+
+		<div id="scorebar">
+			<span id="question-counter">Question <span id="question-counter-number">?</span> / 5</span> 
+
+			<span id="score-counter">Score: <span id="score-counter-number">?</span> correct</span> 
+		</div>
+
+	</div>
+</body>
+</html>

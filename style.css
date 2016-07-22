@@ -3,6 +3,20 @@ body {
 	font-family:'Roboto', 'sans-serif';
 }
 
+h2 {
+	font-family:'Oswald', 'sans-serif';
+	color:white;
+	-webkit-text-stroke: 1px black;
+	text-shadow:
+		3px 3px 0 #000,
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+	font-size:46px;
+	line-height:0px;
+}
+
 .binding-box {
 	width:800px;
 	height:600px;
@@ -18,83 +32,58 @@ body {
 	padding:20px;
 	border-radius:20px;
 	border:5px solid white;
+	background-color:orange;
 }
 
-#start-page .button {
+.next-question, .new-game {
 	background-color:dodgerblue;
 	border:2px solid white;
 	border-radius:5px;
+	color:white;
 	padding:10px;
 	font-size:16px;
+	display:inline-block;
+}
+
+.next-question:hover, .new-game:hover {
+	cursor:pointer;
+	background-color:lightskyblue;
 }
 
 #start-page {
 	z-index:4;
-	background-color:orange;
 	text-align:center;
-	margin:auto;
 	display:block;
+	padding:50px 140px;
 }
 
-#start-page h2 {
-	font-family:'Oswald', 'sans-serif';
-	text-transform:uppercase;
-	font-size:46px;
-	color:white;
-	line-height:0px;
-	-webkit-text-stroke: 1px black;
-	text-shadow:
-		3px 3px 0 #000,
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
-}
-
-#start-page img {
+#start-page img, #result-final img {
 	width:300px;
-}
-
-#result-page {
-	z-index:2;
-	background-color:orange;
-	display:none;
-
 }
 
 #question-page {
 	z-index:1;
-	background-color:orange;
 }
 
 #question-page h2 {
 	box-sizing:border-box;
-	font-family:'Oswald', 'sans-serif';
 	font-size:30px;
-	display:inline-block;
-	margin:0px;
-	color:white;
+	display:table-cell;
+	vertical-align: middle;
 	height:75px;
+	margin:0px;
 	width: 600px;
-	-webkit-text-stroke: 1px black;
-	text-shadow:
-		3px 3px 0 #000,
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
+	line-height:34px;
 }
 
-#question-page .button {
-	background-color:transparent;
+.answer-option {
 	font-size:30px;
 	color:white;
-	border:none;
-	font-family: 'Roboto', 'sans-serif';
 }
 
-#question-page .button:hover {
+.answer-option:hover {
 	color:coral;
+	cursor:pointer;
 }
 
 #mushroom {
@@ -103,12 +92,36 @@ body {
 	margin-right:5px;
 }
 
-#question-page ul {
-	list-style:none;
-	padding:0px;}
-
 #question-page li {
-	margin-bottom:10px;
+	margin-bottom:20px;
+	list-style:none;
+}
+
+#question-page li:before {
+  content: "\2605";
+  margin-right:10px;
+  font-size:25px;
+  color:gold;
+}
+
+
+#result-page {
+	z-index:2;
+	display:none;
+	text-align:center;
+	padding:120px;
+}
+
+#result-page span, #result-final p {
+	font-size:20px;
+	color:white;
+}
+
+#result-final {
+	z-index:4;
+	display:none;
+	text-align:center;
+	padding:50px 140px;
 }
 
 #scorebar {
@@ -121,7 +134,6 @@ body {
 	bottom:0px;
 	height:50px;
 	width:100%;
-	font-family:'Roboto', 'sans-serif';
 	color:white;
 	font-size:26px;
 }

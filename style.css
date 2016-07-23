@@ -92,6 +92,10 @@ h2 {
 	margin-right:5px;
 }
 
+#question-page ul {
+	margin-top:20px;
+}
+
 #question-page li {
 	margin-bottom:20px;
 	list-style:none;

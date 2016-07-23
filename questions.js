@@ -2,8 +2,8 @@ var questionOne = {
 		questionNumber: 1,
 		question: 'What was the first game that Mario starred in?',
 		correctAnswer: 1,
-  	options: ['Mario Bros.', 'Donkey Kong', 'Balloon Fight', 'Marble Madness'],
-  	trivia: 'Donkey Kong debuted in arcades in 1981, and at that time Mario was named \"Jumpman.\"',
+  		options: ['Mario Bros.', 'Donkey Kong', 'Balloon Fight', 'Marble Madness'],
+  		trivia: 'Donkey Kong debuted in arcades in 1981, and at that time Mario was named \"Jumpman.\"',
 };
 
 var questionTwo = {
@@ -11,7 +11,7 @@ var questionTwo = {
 		question: 'Who is the main antagonist in the Mario series?',
 		correctAnswer: 3,
 		options: ['Wario', 'Wart', 'Yoshi', 'Bowser'],
-		trivia: 'The fearsome fire-breathing Bowser is named Koopa in Japan.',
+		trivia: 'The fearsome, fire-breathing Bowser is named Koopa in Japan.',
 };
 
 var questionThree = {
@@ -19,7 +19,7 @@ var questionThree = {
 		question: 'What are the fungus-like enemies of the Mario games called?',
 		correctAnswer: 2,
 		options: ['Toad', 'Funguy', 'Goomba', 'Portabello'],
-		trivia: 'The Goomba’s Japanese name, Kuribo, means \"chestnut guy.\"',
+		trivia: 'The Goomba\'s Japanese name, Kuribo, means \"chestnut guy.\"',
 };
 
 var questionFour = {
